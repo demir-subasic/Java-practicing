@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class Main {
 //        System.out.println("Welcome " + name);
         // ---------------------
 
-        //Rad sa brojevima
+        //Rad sa brojevima1
 //        int a,c,b;
 //        System.out.println("Enter 2 num");
 //        a = s.nextInt();
@@ -71,6 +72,99 @@ public class Main {
 //        int x = 5;
 //        System.out.println(Integer.toBinaryString(x));
         //-----------------------
+
+
+
+        // OPERATORI U JAVI
+//        +,-,*,/,%
+//        i++, i--, ++i, --i;
+
+//        int a = 14, b=5;
+//        float j = (float)a/b; //ako zelimo float rezultat moramo upisati u zagradi float pre toga
+//        int c = a%b;
+//        System.out.println(c);
+//        System.out.println(j);
+
+//        byte a=10;
+//        short b=15;
+//        int c=a+b;
+//        System.out.println(c);
+//        b+s = i (integer)
+//        i + i = i (integer)
+
+
+//         char c = 40;
+//         int i = 30;
+//         int b = c+i;
+//         System.out.println(b); // rezultat je 70, nekim razlogom se sabiraju
+
+
+        //ZADATAK - racunanje povrsine trougla preko visine i jedne od stranica
+//        float base, height, area;
+//        System.out.println("Entera base and Height");
+//        Scanner sc= new Scanner(System.in);
+//        base=sc.nextFloat();
+//        height=sc.nextFloat();
+//        area=base*height/2;
+//        System.out.println("Area of a Triangle is " + area);
+
+
+
+
+        //ZADATAK - Obim kvadrata
+//        Scanner sc=new Scanner(System.in);
+//        int a,b,c;
+//        double r1,r2;
+//        System.out.println("Enter values of a,b and c");
+//        a=sc.nextInt();
+//        b=sc.nextInt();
+//        c=sc.nextInt();
+//        r1 = (-b+Math.sqrt(b*b-4*a*c))/(2*a);
+//        r2 = (-b-Math.sqrt(b*b-4*a*c))/(2*a);
+//        System.out.println("root are "+r1+" "+r2);
+
+
+
+        //INKREMENTI I DEKREMENTI
+//        int x = 5,y;
+//        y= x++;
+//        System.out.println(y); //ovde je x=5 jer se jos nije povecalo
+//        y=x;
+//        System.out.println(y); //ovde je x=6 jer se ranije uvecao
+
+
+//        char a='A';
+//        ++a;
+//        System.out.println(a);
+
+
+        //BITWISE OPERATORS
+//          &  - AND // 00-0, 01-0, 10-0, 11-1
+//          |  - OR // 00-0,  01-1, 10-1, 11-1
+//          ~  - NOT
+//          ^ - XOR //ako je paran broj onda je 0 ako je neparan broj onda je 1 - 00 daju 0, 10 daju 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
