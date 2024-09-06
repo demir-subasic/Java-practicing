@@ -123,6 +123,8 @@ public class Main {
 //        r2 = (-b-Math.sqrt(b*b-4*a*c))/(2*a);
 //        System.out.println("root are "+r1+" "+r2);
 
+        // ------------------------------------
+
 
 
         //INKREMENTI I DEKREMENTI
@@ -137,12 +139,117 @@ public class Main {
 //        ++a;
 //        System.out.println(a);
 
+        // ---------------------------------
+
 
         //BITWISE OPERATORS
 //          &  - AND // 00-0, 01-0, 10-0, 11-1
 //          |  - OR // 00-0,  01-1, 10-1, 11-1
 //          ~  - NOT
 //          ^ - XOR //ako je paran broj onda je 0 ako je neparan broj onda je 1 - 00 daju 0, 10 daju 1
+
+        // ------------------------------------
+
+
+
+
+        // VISE NACINA PRINTOVANJA U JAVI I STA ONI ZNACE
+//        System.out.println("Hello World"); //ispisuje u novoj liniji svaki novi print
+//
+//        System.out.print("Hello");
+//        System.out.print("World"); //ispisuje vise printova u jednoj liniji
+//
+//        int age = 24;
+//        System.out.printf("I am %d years old. \n", age); // ispisivanje kao u jeziku C, gde se pre definise vrednost
+//
+//        double pi = 3.14159;
+//        System.out.format("Pi is %.2f", pi); //zaokruzice pi na dve  decimale
+
+        // ----------------------------
+
+
+        // STRINGOVI
+//        char c[] = {'A', 'B', 'C'};
+//        String str1 = new String(c);
+//
+//        String str2 = new String("Java"); // ovde se kreira novi objekat i to 2, to su pool i heap
+//        System.out.println(str2);
+//
+//        String str5 = "Java";
+//        String str6 = "Java"; // dodavanje novih varijabli sa istom vrednoscu ce se odraziti na isi objekat i idu oba u pool
+
+
+//        char c[] = {'h', 'e','l', 'l','o'};
+//        String str9 = new String(c,1,3); // ovo znaci da krece 1.indexa i ispisuje 3 indeksa
+//        System.out.println(str9);
+
+        //STRING METODE
+//        String str = "Welcome";
+//        String res = str.toLowerCase();
+
+//        - `charAt(int index)`
+//        - `contains(CharSequence s)`
+//        - `indexOf(String str)`
+//        - `lastIndexOf(String str)`
+//        - `startsWith(String prefix)`
+//        - `endsWith(String suffix)`
+//        - `substring(int beginIndex)`
+//        - `substring(int beginIndex, int endIndex)`
+//        - `concat(String str)`
+//        - `replace(char oldChar, char newChar)`
+//        - `replaceAll(String regex, String replacement)`
+//        - `replaceFirst(String regex, String replacement)`
+//        - `toLowerCase()`
+//        - `toUpperCase()`
+//        - `trim()`
+//        - `strip()`
+//        - `stripLeading()`
+//        - `stripTrailing()`
+//        - `equals(Object obj)`
+//        - `equalsIgnoreCase(String anotherString)`
+//        - `compareTo(String anotherString)`
+//        - `compareToIgnoreCase(String str)`
+//        - `isEmpty()`
+//        - `isBlank()`
+//        - `length()`
+//        - `matches(String regex)`
+//        - `getBytes()`
+//        - `toCharArray()`
+//        - `valueOf(int i)`
+//        - `split(String regex)`
+//        - `split(String regex, int limit)`
+
+        // --------------------------------------
+
+        // REGULAR EXPRESIONS - REGEX
+//        String str1 = "k1";
+//        System.out.println(str1.matches(("[a-z][0-9]")));
+//        //uglavnom se koristi da uporedimo da li se nesto nalazi u necemu, npr sifre
+
+//        -Meta characters-
+//        radi se isto sa .matches
+//            \d - digits
+//            \D - not digits
+//            \s - space
+//            \S - not space
+//            \w - alphabets or digits
+//            \W - neither alphabet or digit
+
+        //Quantifiers
+//        radi se isto sa .matches
+//          * - 0 or more time
+//          + - one or more
+//          ? - 0 or 1 time
+//         {X} - X times
+//         {X,Y} - Bewteen X and Y time\
+
+//        String str1 = "abccb";
+//        System.out.println(str1.matches("[abc] {3,7}")); // proverava da li abc i da li ima od 3 do 7 karaktera i to je TRUE u ovom slucaju
+        // -------------------------------------
+
+
+
+
 
 
 
