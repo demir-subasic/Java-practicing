@@ -249,6 +249,38 @@ public class Main {
 
 
 
+        // CONDITIONAL STATEMENTS
+
+//        Scanner scan=new Scanner(System.in);
+//
+//        System.out.println("Enter a URL");
+//        String url=scan.nextLine();
+//
+//        String protocol=url.substring(0, url.indexOf(":"));
+//
+//        if(protocol.equals("http"))
+//            System.out.println("Hypertext Transfer Protocol");
+//        else if(protocol.equals("ftp"))
+//            System.out.println("File Transfer Protocol");
+
+        // ----------------------------------
+
+        // SWITCH CASE
+//        String str="2";
+//
+//        switch(str)
+//        {
+//            case "1": System.out.println("One");
+//                break;
+//            case "2": System.out.println("Two");
+//                break;
+//            case "3": System.out.println("Three");
+//                break;
+//            default : System.out.println("Invalid");
+//        }
+        // ------------------------------
+
+
 
 
 
