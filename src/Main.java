@@ -1,3 +1,5 @@
+import java.awt.*;
+import java.awt.desktop.SystemSleepEvent;
 import java.util.Scanner;
 import java.math.*;
 
@@ -429,6 +431,199 @@ public class Main {
 //            }
 //            System.out.println("");
 //        }
+
+        //---------------------------------------
+
+
+
+        // ARRAYS
+
+//        int A[]=new int [5]; // ovako je defaultna vrednost niza 0 0 0 0 0
+//        A[0] = 15; // ovo zadajemo da je nulti indeks jednako 15
+//
+//        int B[] = {1,2,3,4,5};
+//        System.out.println(B[1]);
+
+        //ovo ce ispisati indekse niza
+//        for (int i=0; i<B.length; i++) {
+//            System.out.println(i);
+//        }
+
+        //ovo ce ispisati indekse niza od nazad
+//        for (int i=B.length-1; i>=0; i--){
+//            System.out.println(B[i]);
+//        }
+
+        // ovo je foreach i ona radi tako sto ce x biti svaki clan od B niza
+//        for(int x : B){
+//            System.out.println(x);
+//        }
+
+
+
+        //ovde smo sabrali sve brojeve niza
+//        int A[] = {3,9,7,8,12,5,15,5,4,10};
+//        int sum = 0;
+//        for (int i=0; i<A.length; i++) {
+//            sum = sum+A[i];
+//        }
+//        System.out.println("Sum is "+ sum);
+
+        //samo drugi nacin prethodnog zadataka preko foreach pretlje
+//        int sum = 0;
+//        for (int x:A) {
+//            sum = sum + x;
+//        }
+//        System.out.println(sum);
+
+
+        // ovde trazimo element u nizu
+//        Scanner sc=new Scanner(System.in);
+//        int A[] = {3,9,7,8,12,5,15,5,4,10};
+//        int key;
+//        System.out.println("Enter a key");
+//        key=sc.nextInt();
+//        for (int i = 0; i<A.length; i++){
+//            if(key == A[i]){
+//                System.out.println("Element found at: "+i);
+//                System.exit(0); // OVO KUCAMO KADA ZELIMO DA IZADJEMO IZ PETLJE
+//            }
+//        }
+//        System.out.println("Element not found");
+
+
+
+
+        //ovde trazimo drugi najveci broj
+//        int A[] = {3,9,7,8,12,5,15,5,4,10};
+//        int max1,max2;
+//        max1=max2=A[0];
+//        for(int i =0; i<A.length; i++){
+//            if(A[i]>max1){
+//                max2=max1;
+//                max1=A[i];
+//            }
+//            else if (A[i]>max2){
+//                max2 = A[i];
+//            }
+//        }
+//        System.out.println("Second largest element is " + max2);
+
+
+
+
+        // rotacija niza tako sto svaki broj pomeramo za jedan na levo
+//        int A[] = {3,9,7,8,12,5,15,5,4,10};
+//        for (int x:A)
+//            System.out.println(x+",");
+//        System.out.println("");
+//
+//        int temp = A[0];
+//        for (int i =1; i<A.length; i++){
+//            A[i-1]=A[i];
+//        }
+//        A[A.length-1]=temp;
+//
+//        for (int x:A)
+//            System.out.println(x+",");
+//        System.out.println("");
+
+
+
+        // ovo je ako zelimo da umetnemo neki broj na neku poziciju / broj 20 na indeks 2
+//        int A[]=new int[10];
+//        A[0]=3;A[1]=9;A[2]=7;A[3]=8;A[4]=12;A[5]=6;
+//        int n=6;
+//
+//        int x = 20;
+//        int index = 2;
+//        for(int i =n; i>index; i--){
+//            A[i]=A[i-1];
+//            A[index]=x;
+//        }
+//        for(int i = 0; i<n; i++){
+//            System.out.println(A[i]+",");
+//            System.out.println("");
+//        }
+
+        // --------------------------------
+
+
+
+        // 2D ARRAYS - izgleda kao matrica i kreira redove (i) i kolone (j)
+
+
+//        int A[][] = new int [3][4];
+//        int A[][] = {{1,2,3,4}, {2,4,6,8}, {3,5,7,9}};
+//        for (int i =0; i< A.length; i++){ // u ovoj liniji pocetak reda je vertikalno
+//            for(int j =0; j<A[0].length; j++){ // u ovoj liniji pocetak redaa je horizontalno
+//                System.out.println(A[i][j]); //ovo ce ispisati samo prvu liniju
+//            }
+//            System.out.println("\n"); // ovo ce ispisati novi red
+//        }
+
+
+        // Jagged Array
+
+//        int A [][];
+//        A=new int[3][];
+//        A[0]=new int[2];
+//        A[1]=new int[4];
+//        A[2]=new int[3];
+//        for(int i=0; i<A.length;i++){
+//            for(int j=0;j<A[i].length;j++){
+//                System.out.print(A[i][j]+" ");
+//            }
+//            System.out.println("");
+//        }
+//      00
+//      0000
+//      000
+        //ovako izgleda jagged aray koji je prikazan iznad
+
+
+
+        //sabiranje dve matrice
+//        int A[][]={{3,5,9},{7,6,2},{4,3,5}};
+//        int B[][]={{1,5,2},{6,8,4},{3,9,7}};
+//        int C[][]= new int [3][3];
+//        for (int i =0; i<A.length; i++){
+//            for (int j = 0; j<A[0].length; j++){
+//                C[i][j] = A[i][j] + B[i][j];
+//            }
+//        }
+//        for (int x[]:C) {
+//            for(int y:x){
+//                System.out.print(y+" ");
+//            }
+//            System.out.println("");
+//        }
+
+
+
+        //sortiranje niza po abecedi
+//        String arr[] = {"java", "python", "pascal", "smalltalk", "ada", "basic"};
+//        java.util.Arrays.sort(arr);
+//        for(String x:arr)
+//            System.out.println(x);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
