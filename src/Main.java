@@ -1,10 +1,11 @@
 import java.awt.*;
 import java.awt.desktop.SystemSleepEvent;
+import java.lang.reflect.Method;
 import java.util.Scanner;
 import java.math.*;
 
 public class Main {
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        Scanner s=new Scanner(System.in);
 
         //Rad sa tekstom
@@ -607,6 +608,69 @@ public class Main {
 //        for(String x:arr)
 //            System.out.println(x);
 
+        //------------------------------------
+
+
+
+
+        // METHODS
+
+//        static int max(int x,int y){ //ovde moramo da pozovemo static zato sto nam je metoda static
+//            if(x>y) {
+//                return x;
+//            else
+//                return y;
+//        }
+//        int a=10, b=15;
+//        int max(int a, int b)
+//        MethodPractice mp =new MethodPractice(); // ovo koristimo kada zelimo da radimo da nije static
+//        System.out.println(max(a,b));
+
+
+
+        //proveravamo da li je broj prime (moze samo da se ddeli sa 1 i sa samim sobom)
+//        static boolean isPrime(int n){
+//            for (int i=2; i<2/n; i++){
+//                if(n%i==0){
+//                    return false;
+//                }
+//                return true;
+//            }
+//        }
+//        public static void main(String[] args){
+//        if(isPrime(91)) {
+////            System.out.println("91 is prime);
+////        }
+
+
+
+        // ovde proveravamo max broj
+//        int max(int x,int y, int z){
+//            return x>y&&x>z ? x : (y>z ? y : z)
+//        }
+
+
+
+//        metoda show() moze da ima vise parametara
+
+//        static void show(int ...A){   // ovo je kao A niz ili ovako - int A[]
+//            for (int x:A){
+//                System.out.println(x);
+//            }
+//        }
+//         public static void main (String[] args ){
+//            show(1,2,3,4);
+//         }
+
+
+    // ovo je Rekurzivna metoda koja poziva samu sebe (radi kao for petlja i ponavlja se u ovom slucaju oduzimanje)
+//    void fun (int n) {
+//        if (n>0){
+//            System.out.println(n);
+//            fun(n-1);
+//        }
+//    }
+//    fun(3) - ovo ce ispisati 3 2 1
 
 
 
@@ -654,5 +718,8 @@ public class Main {
 
 
 
-    }
+
+
+
+//    }
 }
