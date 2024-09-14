@@ -774,6 +774,72 @@ public class Main {
 
 
 
+    //INHERITANCE - nasledjivanje
+
+//    class Shape {
+//        void draw() {
+//            System.out.println("Drawing a shape");
+//        }
+//    }
+//    class Circle extends Shape {
+//        @Override
+//        void draw() {
+//            System.out.println("Drawing a circle");
+//        }
+//    }
+//    class Rectangle extends Shape {
+//        @Override
+//        void draw() {
+//            System.out.println("Drawing a rectangle");
+//        }
+//
+//    public class Main {
+//        public static void main(String[] args) {
+//            Shape myCircle = new Circle();
+//            myCircle.draw();
+//
+//            Shape myRectangle = new Rectangle();
+//            myRectangle.draw();
+//        }
+//    }
+
+
+    // Dynamic Method Dispatch - RUNTIME POLYMORHISM
+
+//    class Animal {
+//        void sound() {
+//            System.out.println("Animal makes a sound");
+//        }
+//    }
+//    class Dog extends Animal {
+//        @Override
+//        void sound() {
+//            System.out.println("Dog barks");
+//        }
+//    }
+//    class Cat extends Animal {
+//        @Override
+//        void sound() {
+//            System.out.println("Cat meows");
+//        }
+//    }
+//    public class Main {
+//        public static void main(String[] args) {
+//            Animal myAnimal = new Dog();
+//            myAnimal.sound();
+//
+//            myAnimal = new Cat();
+//            myAnimal.sound();
+//        }
+//    }
+
+
+    // ---------------------------------------------
+
+
+
+
+
 
 
 
