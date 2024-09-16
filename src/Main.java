@@ -804,7 +804,8 @@ public class Main {
 //    }
 
 
-    // Dynamic Method Dispatch - RUNTIME POLYMORHISM
+
+    // Dynamic Method Dispatch - RUNTIME POLYMORPHISM
 
 //    class Animal {
 //        void sound() {
@@ -835,6 +836,60 @@ public class Main {
 
 
     // ---------------------------------------------
+
+
+
+
+    // ABSTRACT CLASS
+    // uglavnom se koristi za generalizovanje i da druge klase nasledjuju nju
+    // svaka klasa koja nasledjuje nju mora uzeti njene metode, u suprotnom ce ona biti abstract
+
+//    abstract class Shape
+//    {
+//        abstract public double perimeter();
+//        abstract public double area();
+//    }
+//    class Circle extends Shape
+//    {
+//        double radius;
+//
+//        public double perimeter()
+//        {
+//            return 2*Math.PI*radius;
+//        }
+//        public double area()
+//        {
+//            return Math.PI*radius*radius;
+//        }
+//    }
+//    class Rectangle extends Shape
+//    {
+//        double length;
+//        double breadth;
+//
+//        public double perimeter()
+//        {
+//            return 2*(length+breadth);
+//        }
+//        public double area()
+//        {
+//            return length*breadth;
+//        }
+//    }
+//    public class SCAbstract1
+//    {
+//        public static void main(String[] args)
+//        {
+//            Rectangle r=new Rectangle();
+//            r.length=10;
+//            r.breadth=5;
+//
+//            Shape s=r;
+//
+//            System.out.println(s.area());
+//
+//        }
+//    }
 
 
 
