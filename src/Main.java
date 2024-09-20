@@ -934,102 +934,146 @@ public class Main {
 
     //INNER CLASS
 
-    class Outer
-    {
-        int x=10;
-        static int y=20;
-        static class My
-        {
-            public void show()
-            {
-                System.out.println(y);
-            }
-        }
-    }
-    public class LocalInner
-    {
-        public static void main(String[] args)
-        {
-            Outer.My m=new Outer.My();
-            m.show();
+//    class Outer
+//    {
+//        int x=10;
+//        static int y=20;
+//        static class My
+//        {
+//            public void show()
+//            {
+//                System.out.println(y);
+//            }
+//        }
+//    }
+//    public class LocalInner
+//    {
+//        public static void main(String[] args)
+//        {
+//            Outer.My m=new Outer.My();
+//            m.show();
+//
+//        }
+//    }
+//
+//
+//    //STATIC
+//    class Test
+//    {
+//        static int x=10;
+//        int y=20;
+//        void show()
+//        {
+//            System.out.println(x+" "+y);
+//        }
+//        static void display()
+//        {
+//            System.out.println(x);
+//        }
+//    }
+//    public class StaticPractice {
+//        public static void main(String[] args) {
+//            Test t1=new Test();
+//            t1.show();
+//            t1.x=30;
+//            t1.y=50;
+//            Test t2=new Test();
+//            t2.show();
+//        }
+//    }
+//
+//
+//    //Singleton class
+//
+//    class CoffeeMachine
+//    {
+//        private float coffeQty;
+//        private float milkQty;
+//        private float waterQty;
+//        private float sugarQty;
+//        static private CoffeeMachine my=null;
+//        private CoffeeMachine()
+//        {
+//            coffeQty=1;
+//            milkQty=1;
+//            waterQty=1;
+//            sugarQty=1;
+//        }
+//        public void fillWater(float qty)
+//        {
+//            waterQty=qty;
+//        }
+//        public void fillSugar(float qty)
+//        {
+//            sugarQty=qty;
+//        }
+//        public float getCoffee()
+//        {
+//            return 0.15f;
+//        }
+//        static CoffeeMachine getInstance()
+//        {
+//            if(my==null)
+//                my=new CoffeeMachine();
+//            return my;
+//        }
+//    }
+//    public class Singleton
+//    {
+//        public static void main(String[] args)
+//        {
+//            CoffeeMachine m1=CoffeeMachine.getInstance();
+//            CoffeeMachine m2=CoffeeMachine.getInstance();
+//            CoffeeMachine m3=CoffeeMachine.getInstance();
+//            System.out.println(m1+" "+m2+" "+m3);
+//            if(m1==m2 && m1==m3)
+//                System.out.println("Same");
+//        }
+//    }
 
-        }
-    }
 
+    // primer Singleton klase
 
-    //STATIC
-    class Test
-    {
-        static int x=10;
-        int y=20;
-        void show()
-        {
-            System.out.println(x+" "+y);
-        }
-        static void display()
-        {
-            System.out.println(x);
-        }
-    }
-    public class StaticPractice {
-        public static void main(String[] args) {
-            Test t1=new Test();
-            t1.show();
-            t1.x=30;
-            t1.y=50;
-            Test t2=new Test();
-            t2.show();
-        }
-    }
+    //    import java.util.Properties;
+//        import java.io.InputStream;
+//        import java.io.IOException;
 
+//        public class ConfigurationManager {
+//        private static ConfigurationManager instance;
+//        private Properties properties;
+//        private ConfigurationManager() {
+//            properties = new Properties();
+//            try (InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties")) {
+//                if (input != null) {
+//                    properties.load(input);
+//                } else {
+//                    System.out.println("Sorry, unable to find config.properties");
+//                }
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        public static ConfigurationManager getInstance() {
+//            if (instance == null) {
+//                instance = new ConfigurationManager();
+//            }
+//            return instance;
+//        }
+//        public String getProperty(String key) {
+//            return properties.getProperty(key);
+//        }
+//    }
+//    public class Main {
+//        public static void main(String[] args) {
+//            ConfigurationManager config = ConfigurationManager.getInstance();
+//            String appName = config.getProperty("app.name");
+//            String appVersion = config.getProperty("app.version");
+//
+//            System.out.println("App Name: " + appName);
+//            System.out.println("App Version: " + appVersion);
+//        }
+//    }
 
-    //Singleton class
-
-    class CoffeeMachine
-    {
-        private float coffeQty;
-        private float milkQty;
-        private float waterQty;
-        private float sugarQty;
-        static private CoffeeMachine my=null;
-        private CoffeeMachine()
-        {
-            coffeQty=1;
-            milkQty=1;
-            waterQty=1;
-            sugarQty=1;
-        }
-        public void fillWater(float qty)
-        {
-            waterQty=qty;
-        }
-        public void fillSugar(float qty)
-        {
-            sugarQty=qty;
-        }
-        public float getCoffee()
-        {
-            return 0.15f;
-        }
-        static CoffeeMachine getInstance()
-        {
-            if(my==null)
-                my=new CoffeeMachine();
-            return my;
-        }
-    }
-    public class Singleton
-    {
-        public static void main(String[] args)
-        {
-            CoffeeMachine m1=CoffeeMachine.getInstance();
-            CoffeeMachine m2=CoffeeMachine.getInstance();
-            CoffeeMachine m3=CoffeeMachine.getInstance();
-            System.out.println(m1+" "+m2+" "+m3);
-            if(m1==m2 && m1==m3)
-                System.out.println("Same");
-        }
-    }
 
 
 
