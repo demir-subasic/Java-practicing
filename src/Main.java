@@ -1074,6 +1074,105 @@ public class Main {
 //        }
 //    }
 
+    // ----------------------------------------
+
+
+
+    // EXCEPTION HANDLING
+
+//    import java.util.Scanner;
+//
+//    public class ExceptionDemo
+//    {
+//        public static void main(String[] args)
+//        {
+//            int a,b,c;
+//            Scanner sc=new Scanner(System.in);
+//            System.out.println("Eneter 2 numbers");
+//            a=sc.nextInt();
+//            b=sc.nextInt();
+//            try
+//            {
+//                c=a/b;
+//                System.out.println("Division is" +c);
+//            }
+//            catch(ArithmeticException e)
+//            {
+//                System.out.println("Denominator should not be 0, try again");
+//            }
+//            System.out.println("Bye");
+//        }
+//    }
+
+
+    // Throw and Throws
+//    class NegativeDimensionException extends Exception
+//    {
+//        public String toString()
+//        {
+//            return "Dimensions of a Rectangle cannot be Negative";
+//        }
+//    }
+//    public class ThrowThrowsDemo
+//    {
+//        static int area(int l,int b) throws NegativeDimensionException
+//        {
+//            if(l<0 || b<0)
+//                throw new NegativeDimensionException();
+//            return l*b;
+//        }
+//        static void meth1() throws NegativeDimensionException
+//        {
+//            System.out.println("Area is "+area(10,5));
+//        }
+//        public static void main(String[] args)
+//        {
+//            try
+//            {
+//                meth1();
+//            }
+//            catch(NegativeDimensionException e)
+//            {
+//                System.out.println(e);
+//            }
+//            System.err.println("hi");
+//        }
+//    }
+
+
+    // Try with resources - primer
+
+//package resourcesdemo;
+//import java.io.*;
+//import java.util.*;
+//
+//    public class ResourcesDemo
+//    {
+//        static void Divide() throws Exception
+//        {
+//            try(FileInputStream fi=new FileInputStream("/Users/abdulbari/Desktop/Test.txt");Scanner sc=new Scanner(fi) )
+//            {
+//                int a=sc.nextInt();
+//                int b=sc.nextInt();
+//                int c=sc.nextInt();
+//                System.out.println(a/c);
+//            }
+//        }
+//        public static void main(String[] args) throws Exception
+//        {
+//            try
+//            {
+//                Divide();
+//            }
+//            catch(Exception e)
+//            {
+//                System.out.println(e);
+//            }
+//            //int x=sc.nextInt();
+//            // System.out.println(x);
+//        }
+//    }
+
 
 
 
