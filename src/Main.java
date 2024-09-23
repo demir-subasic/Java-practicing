@@ -1285,54 +1285,106 @@ public class Main {
 
     //Sinhronizacija (da se uspostavi rad samog sistema kada imamo vise metoda)
 
-    class MyData
-    {
-        synchronized public void display(String str)
-        {
-            for(int i=0;i<str.length();i++)
-            {
-                System.out.print(str.charAt(i));
-                try{Thread.sleep(100);}catch(Exception e){}
-            }
-        }
-    }
-    class MyThread1 extends Thread
-    {
-        MyData d;
-        public MyThread1(MyData d)
-        {
-            this.d=d;
-        }
-        public void run()
-        {
-            d.display("Hello World");
-        }
-    }
-    class MyThread2 extends Thread
-    {
-        MyData d;
-        public MyThread2(MyData d)
-        {
-            this.d=d;
-        }
-        public void run()
-        {
-            d.display("Welcome All");
-        }
-    }
-    public class SyncDemo
-    {
-        public static void main(String[] args)
-        {
-            MyData data=new MyData();
-            MyThread1 t1=new MyThread1(data);
-            MyThread2 t2=new MyThread2(data);
-            t1.start();
-            t2.start();
-        }
-    }
+//    class MyData
+//    {
+//        synchronized public void display(String str)
+//        {
+//            for(int i=0;i<str.length();i++)
+//            {
+//                System.out.print(str.charAt(i));
+//                try{Thread.sleep(100);}catch(Exception e){}
+//            }
+//        }
+//    }
+//    class MyThread1 extends Thread
+//    {
+//        MyData d;
+//        public MyThread1(MyData d)
+//        {
+//            this.d=d;
+//        }
+//        public void run()
+//        {
+//            d.display("Hello World");
+//        }
+//    }
+//    class MyThread2 extends Thread
+//    {
+//        MyData d;
+//        public MyThread2(MyData d)
+//        {
+//            this.d=d;
+//        }
+//        public void run()
+//        {
+//            d.display("Welcome All");
+//        }
+//    }
+//    public class SyncDemo
+//    {
+//        public static void main(String[] args)
+//        {
+//            MyData data=new MyData();
+//            MyThread1 t1=new MyThread1(data);
+//            MyThread2 t2=new MyThread2(data);
+//            t1.start();
+//            t2.start();
+//        }
+//    }
+//
+//
+//    // Primer ATM Machine (sinhronizacija)
+//    // jedna osoba ne moze da koristi atm dok je vec u procesu koriscenja od strane druge osobe
+//
+//    class ATM
+//    {
+//        synchronized public void checkBalance(String name)
+//        {
+//            System.out.print(name + " Checking ");
+//            try{Thread.sleep(1000);}catch(Exception e){}
+//            System.out.println("Balance");
+//        }
+//        synchronized public void withdraw(String name,int amount)
+//        {
+//            System.out.print(name + " withdrawing ");
+//            try{Thread.sleep(1000);}catch(Exception e){}
+//            System.out.println(amount);
+//        }
+//    }
+//    class Customer extends Thread
+//    {
+//        String name;
+//        int amount;
+//        ATM atm;
+//        Customer(String n,ATM a,int amt)
+//        {
+//            name=n;
+//            atm=a;
+//            amount=amt;
+//        }
+//        public void useATM()
+//        {
+//            atm.checkBalance(name);
+//            atm.withdraw(name, amount);
+//        }
+//        public void run()
+//        {
+//            useATM();
+//        }
+//    }
+//    public class SCThread1
+//    {
+//        public static void main(String[] args)
+//        {
+//            ATM atm=new ATM();
+//            Customer c1=new Customer("Smith",atm,100);
+//            Customer c2=new Customer("John",atm,200);
+//            c1.start();
+//            c2.start();
+//        }
+//    }
 
-
+    // --------------------------------------------
 
 
 
