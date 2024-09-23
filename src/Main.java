@@ -1174,6 +1174,168 @@ public class Main {
 //    }
 
 
+    // -----------------------------------------
+
+    // MULTITHREADING
+
+    // Ovo je Thread (govori se o multitaskovanju)
+///*class MyThread extends Thread
+//{
+//    public void run()
+//    {
+//        int i=1;
+//        while(true)
+//        {
+//            System.out.println(i+"Hello");
+//            i++;
+//        }
+//    }
+//}*/
+//    class MyRunnable implements Runnable
+//    {
+//        public void run()
+//        {
+//            int i=1;
+//            while(true)
+//            {
+//                System.out.println(i+"Hello");
+//                i++;
+//            }
+//        }
+//    }
+//    public class ThreadTest //implements Runnable //extends Thread
+//    {
+//    /*public void run()
+//    {
+//        int i=1;
+//        while(true)
+//        {
+//            System.out.println(i+"Hello");
+//            i++;
+//        }
+//    }*/
+//        public static void main(String[] args) {
+//            //MyThread t=new MyThread();
+//            //ThreadTest t=new ThreadTest();
+//            MyRunnable t=new MyRunnable();
+//            Thread th=new Thread(t);
+//            th.start();
+//            int i=1;
+//            while(true)
+//            {
+//                System.out.println(i+"World");
+//            }
+//        }
+//    }
+
+
+
+
+    // Thread constructor, sleep, & interrupt
+
+    /*class MyRun implements Runnable
+    {
+        public void run()
+        {
+
+        }
+    }*/
+//    class MyThread extends Thread
+//    {
+//        public MyThread(String name)
+//        {
+//            super(name);
+//            //setPriority(Thread.MAX_PRIORITY);
+//            //setPriority(Thread.MIN_PRIORITY+2);
+//        }
+//        public void run()
+//        {
+//            int count=1;
+//            while(true)
+//            {
+//                System.out.println(count++);
+//                try
+//                {
+//                    Thread.sleep(1000);
+//                }
+//                catch(InterruptedException e)
+//                {
+//                    System.out.println(e);
+//                }
+//            }
+//        }
+//    }
+//
+//    public class ThreadTest1 {
+//        public static void main(String[] args)
+//        {
+//            //Thread t=new Thread(new MyRun(),"My Name");
+//            MyThread t=new MyThread("My Thread 1");
+//            t.start();
+//            t.interrupt();
+//        /*System.out.println("ID "+t.getId());
+//        System.out.println("Name "+t.getName());
+//        System.out.println("Priority "+t.getPriority());
+//        t.start();
+//        System.out.println("State "+t.getState());
+//        System.out.println("Alive "+t.isAlive());*/
+//        }
+//    }
+
+
+    //Sinhronizacija (da se uspostavi rad samog sistema kada imamo vise metoda)
+
+    class MyData
+    {
+        synchronized public void display(String str)
+        {
+            for(int i=0;i<str.length();i++)
+            {
+                System.out.print(str.charAt(i));
+                try{Thread.sleep(100);}catch(Exception e){}
+            }
+        }
+    }
+    class MyThread1 extends Thread
+    {
+        MyData d;
+        public MyThread1(MyData d)
+        {
+            this.d=d;
+        }
+        public void run()
+        {
+            d.display("Hello World");
+        }
+    }
+    class MyThread2 extends Thread
+    {
+        MyData d;
+        public MyThread2(MyData d)
+        {
+            this.d=d;
+        }
+        public void run()
+        {
+            d.display("Welcome All");
+        }
+    }
+    public class SyncDemo
+    {
+        public static void main(String[] args)
+        {
+            MyData data=new MyData();
+            MyThread1 t1=new MyThread1(data);
+            MyThread2 t2=new MyThread2(data);
+            t1.start();
+            t2.start();
+        }
+    }
+
+
+
+
+
 
 
 
